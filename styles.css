@@ -121,6 +121,7 @@ a {
     display: flex;
     flex-direction: column;
     height: 100%;
+    flex: 1;
 
     /* Adjust this value as needed */
 }
@@ -512,7 +513,6 @@ nav {
     background-color: #e1e8ed;
 }
 
-/* Add styling to make everything smaller in the Follow container */
 .follow-container {
     border: 1px solid #e1e8ed;
     border-radius: 15px;
@@ -544,7 +544,6 @@ nav {
     max-height: 40px;
     /* Reduce the size of the profile picture */
     border-radius: 50%;
-    margin-right: 10px;
 }
 
 .follow-list a {
@@ -556,15 +555,49 @@ nav {
     margin-right: 10px;
 }
 
+.button-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .follow-button {
     background-color: #3560EE;
     color: #fff;
     border: none;
-    padding: 8px 16px;
-    /* Reduce the button size */
-    border-radius: 15px;
+    padding: 8px 12px;
+    /* Adjust the button size */
+    border-radius: 10px;
     /* Slightly reduce the button border radius */
     cursor: pointer;
-    font-size: 14px;
-    /* Smaller font size for the button */
+    font-size: 12px;
+    /* Make the button smaller */
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Apply styles to the article list */
+.article-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.article-list li {
+    margin: 10px 0;
+}
+
+/* Style the article links */
+.article-list a {
+    text-decoration: none;
+    color: #3c3744;
+    /* Link color */
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+    /* Color transition effect */
+}
+
+.article-list a:hover {
+    color: #3560EE;
+    /* Change color on hover */
 }
