@@ -50,7 +50,7 @@ a {
 /* For screens with a width of 768px (for tablets) */
 @media (min-width: 481px) and (max-width: 768px) {
     .container {
-        width: 90%;
+        width: 95%;
         /* Adjust the width for tablets */
     }
 }
@@ -58,7 +58,7 @@ a {
 /* For screens with a width of 1024px (for larger tablets and small desktops) */
 @media (min-width: 769px) and (max-width: 1024px) {
     .container {
-        width: 80%;
+        width: 95%;
         /* Adjust the width for larger tablets and small desktops */
     }
 }
@@ -66,7 +66,7 @@ a {
 /* For screens with a width of 1280px (for most desktops) */
 @media (min-width: 1025px) and (max-width: 1280px) {
     .container {
-        width: 80%;
+        width: 95%;
         /* Adjust the width for most desktops */
     }
 }
@@ -82,7 +82,7 @@ a {
 /* For screens with a width of 1600px and wider (wide screens) */
 @media (min-width: 1601px) {
     .container {
-        width: 50%;
+        width: 60%;
         /* Adjust the width for wide screens */
     }
 }
