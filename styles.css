@@ -1,0 +1,570 @@
+/* Import the Cairo font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+/* Apply the custom font to Arabic text elements */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+button,
+span,
+a {
+    font-family: 'Cairo', sans-serif;
+    /* Specify the custom font */
+}
+
+/* Specify the font-weight for various elements (adjust as needed) */
+h1 {
+    font-weight: 700;
+    /* Bold font for headers */
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f5f8fa;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #3066be;
+}
+
+/* Media queries for different screen resolutions */
+
+/* For screens with a maximum width of 480px (for smartphones) */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        /* Adjust the width for smaller screens */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* For screens with a width of 768px (for tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        width: 90%;
+        /* Adjust the width for tablets */
+    }
+}
+
+/* For screens with a width of 1024px (for larger tablets and small desktops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+        /* Adjust the width for larger tablets and small desktops */
+    }
+}
+
+/* For screens with a width of 1280px (for most desktops) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .container {
+        width: 80%;
+        /* Adjust the width for most desktops */
+    }
+}
+
+/* For screens with a width of 1440px (for larger desktops) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+    .container {
+        width: 80%;
+        /* Adjust the width for larger desktops */
+    }
+}
+
+/* For screens with a width of 1600px and wider (wide screens) */
+@media (min-width: 1601px) {
+    .container {
+        width: 50%;
+        /* Adjust the width for wide screens */
+    }
+}
+
+/* You can add more media queries for other screen sizes as needed */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+/* You can add more media queries for other screen sizes as needed */
+
+.menu-list {
+    padding-right: 5px;
+    list-style-type: none;
+}
+
+.left-menu,
+.right-menu {
+    direction: rtl;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #f5f8fa;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    flex-direction: column;
+    position: sticky;
+    top: 20px;
+    /* Adjust this value as needed */
+}
+
+.right-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    /* Adjust this value as needed */
+}
+
+.left-menu {
+    direction: rtl;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.menu-container {
+    flex: 1;
+    /* Allow the menu container to grow and fill the available space */
+    overflow-y: auto;
+    /* Enable vertical scrolling within the menu container */
+    max-height: calc(100vh - 40px);
+    /* Calculate max height to fit the viewport minus top margin */
+}
+
+.central-column {
+    flex: 3;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    direction: rtl;
+}
+
+.post {
+    border-bottom: 1px solid #e1e8ed;
+    padding: 15px 0;
+}
+
+.post-header {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.post-image img {
+    border-radius: 10px;
+    /* Add rounded edges */
+}
+
+.post:last-child {
+    border-bottom: none;
+}
+
+.post-text {
+    margin-bottom: 10px;
+    color: #3c3744;
+}
+
+.post-author {
+    font-weight: bold;
+    font-size: 18px;
+    color: #3066be;
+    display: flex;
+    align-items: center;
+}
+
+.author-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: #3066be;
+}
+
+.post-handle {
+    font-size: 16px;
+    color: #657786;
+}
+
+.post-time {
+    color: #657786;
+    font-size: 14px;
+}
+
+.author-avatar {
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.post-content {
+    flex: 1;
+}
+
+.profile-picture {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-container {
+    border: 1px solid #e1e8ed;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.tags-container {
+    border: 1px solid #e1e8ed;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.tags-container h2 {
+    margin-top: 0px;
+    color: #3066be;
+    font-size: 18px;
+}
+
+.arabic-tags {
+    list-style: none;
+    padding: 0;
+}
+
+.arabic-tags li {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #657786;
+    display: inline-block;
+    background-color: #b4c5e4;
+    padding: 2px 2px;
+    border-radius: 20px;
+}
+
+.content-container {
+    border: 1px solid #e1e8ed;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.content-container h2 {
+    margin-top: 0;
+    color: #3066be;
+    font-size: 18px;
+}
+
+.content-container p {
+    font-size: 16px;
+    color: #657786;
+}
+
+.content-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content-container li {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #657786;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #3066be;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    /* Reduced padding for a slimmer bar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+    /* Add spacing between menu items */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+    /* Add a color transition effect */
+}
+
+.menu a:hover {
+    color: #3560EE;
+    /* Change color on hover */
+}
+
+/* Styles for Comments */
+.comment {
+    background-color: #fff;
+    border: none;
+    /* Remove the border-radius */
+    margin: 15px 0;
+    /* Increased margin between comments */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid #e1e8ed;
+    /* Add a border to the bottom of each comment */
+}
+
+.comment:last-child {
+    border-bottom: none;
+    /* Remove the border for the last comment */
+}
+
+.comment-user {
+    display: flex;
+    align-items: center;
+}
+
+.comment-profile-picture img {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    /* Increased spacing to the right of the profile picture */
+}
+
+.comment-details {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    /* Increased spacing to the right of the names */
+}
+
+.comment-author {
+    font-weight: bold;
+    color: #3560EE;
+    /* Author name color */
+    font-size: 18px;
+    margin-bottom: 5px;
+    /* Increased spacing below author name */
+}
+
+.comment-handle {
+    color: #657786;
+    /* Handle color */
+    font-size: 16px;
+    margin-bottom: 10px;
+    /* Increased spacing below handle */
+}
+
+.comment-content {
+    margin-top: 10px;
+}
+
+.comment-text {
+    color: #333;
+    /* Comment text color */
+    font-size: 16px;
+}
+
+.comment-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.comment-time {
+    color: #657786;
+    /* Time color */
+    font-size: 14px;
+    margin-right: 10px;
+    /* Increased spacing to the right of time */
+}
+
+.heart-button {
+    background-color: transparent;
+    color: #e62117;
+    /* Heart button color */
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.heart-button i {
+    color: #e62117;
+    /* Heart icon color */
+    margin-right: 5px;
+    /* Add space between the icon and text */
+}
+
+.new-comment-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #e1e8ed;
+    font-size: 16px;
+    border-radius: 0;
+    /* Remove border radius */
+    background-color: #fff;
+    direction: rtl;
+    margin-bottom: 10px;
+}
+
+/* Styles for New Comment Button */
+.new-comment-button {
+    background-color: #3560EE;
+    /* Button background color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.select-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-button {
+    flex: 1;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+.select-button button {
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .75rem 1rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.select-button button:hover {
+    background-color: rgb(249, 250, 251);
+}
+
+.select-button button:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.select-button button:focus-visible {
+    box-shadow: none;
+}
+
+.button-separator {
+    width: 1px;
+    height: 20px;
+    background-color: #e1e8ed;
+}
+
+/* Add styling to make everything smaller in the Follow container */
+.follow-container {
+    border: 1px solid #e1e8ed;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.follow-container h2 {
+    margin-top: 0;
+    color: #3066be;
+    font-size: 16px;
+    /* Smaller font size for the heading */
+}
+
+.follow-list {
+    list-style: none;
+    padding: 0;
+}
+
+.follow-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.follow-list img {
+    max-width: 40px;
+    /* Reduce the size of the profile picture */
+    max-height: 40px;
+    /* Reduce the size of the profile picture */
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.follow-list a {
+    font-weight: bold;
+    color: #3066be;
+    font-size: 14px;
+    /* Smaller font size for the name */
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.follow-button {
+    background-color: #3560EE;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    /* Reduce the button size */
+    border-radius: 15px;
+    /* Slightly reduce the button border radius */
+    cursor: pointer;
+    font-size: 14px;
+    /* Smaller font size for the button */
+}

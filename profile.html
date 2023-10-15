@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page (RTL)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            background-color: #f5f8fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1da1f2;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        .profile-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            direction: rtl;
+        }
+
+        .profile-picture {
+            max-width: 150px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .profile-picture img {
+            width: 100%;
+            height: auto;
+        }
+
+        .profile-info {
+            text-align: center;
+        }
+
+        .profile-name {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .profile-handle {
+            color: #1da1f2;
+            font-size: 18px;
+        }
+
+        .profile-description {
+            margin: 20px 0;
+        }
+
+        .profile-tweets {
+            border-top: 1px solid #e1e8ed;
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+
+        .tweet {
+            border-bottom: 1px solid #e1e8ed;
+            padding: 15px 0;
+        }
+
+        .tweet:last-child {
+            border-bottom: none;
+        }
+
+        .tweet-text {
+            margin-bottom: 10px;
+        }
+
+        .tweet-actions {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .tweet-action {
+            display: flex;
+            align-items: center;
+            color: #657786;
+            font-size: 14px;
+            margin-left: 20px;
+        }
+
+        .right-menu {
+            background-color: #f5f8fa;
+            direction: rtl;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .menu-container {
+            border: 1px solid #e1e8ed;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .tags-container {
+            border: 1px solid #e1e8ed;
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        .tags-container h2 {
+            color: #1da1f2;
+            font-size: 18px;
+        }
+
+        .arabic-tags {
+            list-style: none;
+            padding: 0;
+        }
+
+        .arabic-tags li {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #657786;
+            display: inline-block;
+            margin-right: 10px;
+            background-color: #f2f9fc;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Profile Page (RTL)</h1>
+    </header>
+    <div class="profile-container">
+        <div class="profile-picture">
+            <img src="profile-picture.jpg" alt="Profile Picture">
+        </div>
+        <div class="profile-info">
+            <div class="profile-name">اسم الملف الشخصي</div>
+            <div class="profile-handle">@handle</div>
+            <div class="profile-description">وصف الملف الشخصي يمكن وضعه هنا.</div>
+        </div>
+        <div class="profile-tweets">
+            <div class="tweet">
+                <div class="tweet-text">هذا تغريدة عينية. #تغريدة_عينية</div>
+                <div class="tweet-actions">
+                    <div class="tweet-action">
+                        20 <i class="far fa-heart"></i>
+                    </div>
+                    <div class="tweet-action">
+                        10 <i class="fas fa-retweet"></i>
+                    </div>
+                    <div class="tweet-action">
+                        <i class="far fa-comment"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="tweet">
+                <div class="tweet-text">نشرت صورة لعطلتي! 🏖️ #وقت_العطلة</div>
+                <div class="tweet-actions">
+                    <div class="tweet-action">
+                        30 <i class="far fa-heart"></i>
+                    </div>
+                    <div class="tweet-action">
+                        15 <i class="fas fa-retweet"></i>
+                    </div>
+                    <div class="tweet-action">
+                        <i class="far fa-comment"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="right-menu">
+        <div class="menu-container">
+            <div class="profile-picture">
+                <img src="profile-picture.jpg" alt="Profile Picture">
+            </div>
+            <div class="menu-list">
+                <ul>
+                    <li><a href="#">الصفحة الرئيسية</a></li>
+                    <li><a href="#">الإشعارات</a></li>
+                    <li><a href="#">الرسائل</a></li>
+                    <li><a href="#">الملف الشخصي</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tags-container">
+            <h2>الوسوم</h2>
+            <ul class="arabic-tags">
+                <li>#تويتر</li>
+                <li>#تغريدة</li>
+                <li>#عربي</li>
+                <li>#شبكات_اجتماعية</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

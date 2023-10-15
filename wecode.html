@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weCode UI (RTL)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Your custom styles file -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu" id="menu">
+                <li><a href="#">مقالات</a></li>
+                <li><a href="#">أخبار</a></li>
+                <li><a href="#">وظائف</a></li>
+                <li><a href="#">سؤال و جواب</a></li>
+                <!-- JavaScript will dynamically add more menu items here -->
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="left-menu">
+            <!-- Left Menu Content -->
+            <div class="content-container">
+                <h2>مقالات مختارة</h2>
+                <p>هنا يمكنك إضافة المحتوى الذي تريده.</p>
+            </div>
+            <div class="content-container">
+                <h2>وظائف جديدة</h2>
+                <ul>
+                    <li><a href="#">عنصر 1</a></li>
+                    <li><a href="#">عنصر 2</a></li>
+                    <li><a href="#">عنصر 3</a></li>
+                    <!-- JavaScript will dynamically add more list items here -->
+                </ul>
+            </div>
+            <div class="content-container">
+                <h2>أخبار</h2>
+                <ul>
+                    <li><a href="#">عنصر 1</a></li>
+                    <li><a href="#">عنصر 2</a></li>
+                    <li><a href="#">عنصر 3</a></li>
+                    <!-- JavaScript will dynamically add more list items here -->
+                </ul>
+            </div>
+        </div>
+        <div class="central-column">
+            <div class="select-buttons">
+                <div class="select-button">
+                    <button id="following-button">متابعة</button>
+                </div>
+                <div class="button-separator"></div>
+                <div class="select-button">
+                    <button id="featured-button">مختارة</button>
+                </div>
+
+            </div>
+            <div class="post-container">
+                <div class="post">
+                    <div class="post-image">
+                        <img src="post-image.jpg" alt="post Image" style="max-width: 100%; max-height: 100%;">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-header">
+                            <div class="post-author">
+                                <img src="profile.jpg" alt="Author Avatar" class="author-avatar">
+                                <div class="author-details">
+                                    <span class="author-name">أنس بحيح</span>
+                                    <div class="post-handle">@anas</div>
+                                </div>
+                            </div>
+                            <div class="post-time">منذ يومان</div>
+                        </div>
+                        <div class="post-text">هذا تغريدة عينية. #تغريدة_عينية</div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-image">
+                        <img src="post-image.jpg" alt="post Image" style="max-width: 100%; max-height: 100%;">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-header">
+                            <div class="post-author">
+                                <img src="profile.jpg" alt="Author Avatar" class="author-avatar">
+                                <div class="author-details">
+                                    <span class="author-name">أنس بحيح</span>
+                                    <div class="post-handle">@anas</div>
+                                </div>
+                            </div>
+                            <div class="post-time">منذ يومان</div>
+                        </div>
+                        <div class="post-text">هذا تغريدة عينية. #تغريدة_عينية</div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-image">
+                        <img src="post-image.jpg" alt="post Image" style="max-width: 100%; max-height: 100%;">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-header">
+                            <div class="post-author">
+                                <img src="profile.jpg" alt="Author Avatar" class="author-avatar">
+                                <div class="author-details">
+                                    <span class="author-name">أنس بحيح</span>
+                                    <div class="post-handle">@anas</div>
+                                </div>
+                            </div>
+                            <div class="post-time">منذ يومان</div>
+                        </div>
+                        <div class="post-text">هذا تغريدة عينية. #تغريدة_عينية</div>
+                    </div>
+                </div>
+                <!-- Add more posts as needed -->
+            </div>
+        </div>
+        <div class="right-menu">
+            <!-- Right Menu Content -->
+            <!-- Profile Picture -->
+            <div class="menu-container">
+                <div class="profile-picture">
+                    <img src="profile.jpg" alt="Profile Picture">
+                </div>
+                <ul class="menu-list" id="rightMenu">
+                    <li><a href="#"><i class="fas fa-home"></i> الصفحة الرئيسية</a></li>
+                    <li><a href="#"><i class="fas fa-bell"></i> الإشعارات</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> الرسائل</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> الملف الشخصي</a></li>
+                    <!-- JavaScript will dynamically add more menu items here -->
+                </ul>
+            </div>
+            <!-- Container for Follow People -->
+            <div class="follow-container">
+                <h2>المتابعة</h2>
+                <ul class="follow-list">
+                    <li>
+                        <img src="follower1.jpg" alt="Follower 1">
+                        <a href="#">اسم المتابع 1</a>
+                        <button class="follow-button">متابعة</button>
+                    </li>
+                    <li>
+                        <img src="follower2.jpg" alt="Follower 2">
+                        <a href="#">اسم المتابع 2</a>
+                        <button class="follow-button">متابعة</button>
+                    </li>
+                    <!-- Add more followers as needed -->
+                </ul>
+            </div>
+            <div class="tags-container">
+                <h2>الوسوم</h2>
+                <ul class="arabic-tags">
+                    <li>#تويتر</li>
+                    <li>#تغريدة</li>
+                    <li>#عربي</li>
+                    <li>#شبكات_اجتماعية</li>
+                    <!-- Add more tags as needed -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
