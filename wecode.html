@@ -14,7 +14,6 @@
         <nav>
             <ul class="menu" id="menu">
                 <li><a href="#">مقالات</a></li>
-                <li><a href="#">أخبار</a></li>
                 <li><a href="#">وظائف</a></li>
                 <li><a href="#">سؤال و جواب</a></li>
                 <!-- JavaScript will dynamically add more menu items here -->
@@ -40,100 +39,6 @@
                     <li><a href="#">أهم 10 أسرار لتصبح مبرمجًا ناجحًا</a></li>
                     <li><a href="#">تطوير تطبيقات الجوّال باستخدام React Native</a></li>
                     <!-- JavaScript will dynamically add more list items here -->
-                </ul>
-            </div>
-            <div class="content-container">
-                <h2>أخبار</h2>
-                <ul class="article-list">
-                    <li><a href="#">كيفية تعلم لغة البرمجة الجديدة بسرعة</a></li>
-                    <li><a href="#">أهم 10 أسرار لتصبح مبرمجًا ناجحًا</a></li>
-                    <li><a href="#">تطوير تطبيقات الجوّال باستخدام React Native</a></li>
-                    <!-- JavaScript will dynamically add more list items here -->
-                </ul>
-            </div>
-        </div>
-        <div class="central-column">
-            <div class="select-buttons">
-                <div class="select-button">
-                    <button id="following-button">متابعة</button>
-                </div>
-                <div class="button-separator"></div>
-                <div class="select-button">
-                    <button id="featured-button">مختارة</button>
-                </div>
-
-            </div>
-            <div class="post-container">
-                <div class="post">
-                    <div class="post-image">
-                        <img src="post-image.jpg" alt="post Image" style="max-width: 100%; max-height: 100%;">
-                    </div>
-                    <div class="post-content">
-                        <div class="post-header">
-                            <div class="post-author">
-                                <img src="profile.jpg" alt="Author Avatar" class="author-avatar">
-                                <div class="author-details">
-                                    <span class="author-name">أنس بحيح</span>
-                                    <div class="post-handle">@anas</div>
-                                </div>
-                            </div>
-                            <div class="post-time">منذ يومان</div>
-                        </div>
-                        <div class="post-text">هذا تغريدة عينية. #تغريدة_عينية</div>
-                    </div>
-                </div>
-                <div class="post">
-                    <div class="post-image">
-                        <img src="post-image.jpg" alt="post Image" style="max-width: 100%; max-height: 100%;">
-                    </div>
-                    <div class="post-content">
-                        <div class="post-header">
-                            <div class="post-author">
-                                <img src="profile.jpg" alt="Author Avatar" class="author-avatar">
-                                <div class="author-details">
-                                    <span class="author-name">أنس بحيح</span>
-                                    <div class="post-handle">@anas</div>
-                                </div>
-                            </div>
-                            <div class="post-time">منذ يومان</div>
-                        </div>
-                        <div class="post-text">هذا تغريدة عينية. #تغريدة_عينية</div>
-                    </div>
-                </div>
-                <div class="post">
-                    <div class="post-image">
-                        <img src="post-image.jpg" alt="post Image" style="max-width: 100%; max-height: 100%;">
-                    </div>
-                    <div class="post-content">
-                        <div class="post-header">
-                            <div class="post-author">
-                                <img src="profile.jpg" alt="Author Avatar" class="author-avatar">
-                                <div class="author-details">
-                                    <span class="author-name">أنس بحيح</span>
-                                    <div class="post-handle">@anas</div>
-                                </div>
-                            </div>
-                            <div class="post-time">منذ يومان</div>
-                        </div>
-                        <div class="post-text">هذا تغريدة عينية. #تغريدة_عينية</div>
-                    </div>
-                </div>
-                <!-- Add more posts as needed -->
-            </div>
-        </div>
-        <div class="right-menu">
-            <!-- Right Menu Content -->
-            <!-- Profile Picture -->
-            <div class="menu-container">
-                <div class="profile-picture">
-                    <img src="profile.jpg" alt="Profile Picture">
-                </div>
-                <ul class="menu-list" id="rightMenu">
-                    <li><a href="#"><i class="fas fa-home"></i> الصفحة الرئيسية</a></li>
-                    <li><a href="#"><i class="fas fa-bell"></i> الإشعارات</a></li>
-                    <li><a href="#"><i class="fas fa-envelope"></i> الرسائل</a></li>
-                    <li><a href="#"><i class="fas fa-user"></i> الملف الشخصي</a></li>
-                    <!-- JavaScript will dynamically add more menu items here -->
                 </ul>
             </div>
             <!-- Container for Follow People -->
@@ -168,7 +73,106 @@
                 </ul>
             </div>
         </div>
+        <div class="central-column">
+            <div class="select-buttons">
+                <div class="select-button">
+                    <button id="following-button">متابعة</button>
+                </div>
+                <div class="button-separator"></div>
+                <div class="select-button">
+                    <button id="featured-button">مختارة</button>
+                </div>
+
+            </div>
+            <div class="post-container" id="post-container">
+                <!-- post -->
+                <div class="post">
+                    <div class="post-content">
+                        <h3 class="post-title">عنوان المقالة</h3>
+                        <div class="post-text">
+
+                            هذا مقال عن برمجة الويب وتطوير المواقع الإلكترونية. يتحدث المقال عن أحدث التقنيات
+                            والأدوات
+                            التي يمكن استخدامها في تطوير
+                            الواجهات وتحسين أداء المواقع.
+                        </div>
+                        <div class="post-footer">
+                            <div class="post-author">
+                                <img src="profile.jpg" alt="Author Avatar" class="author-avatar">
+                                <div class="author-details">
+                                    <span class="author-name">أنس بحيح</span>
+                                    <div class="author-handle">@anas</div>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <i class="far fa-bookmark"></i> <!-- Bookmark icon (outline style) -->
+                                <i class="far fa-heart"></i> <!-- Like icon (outline style) -->
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="post-image">
+                        <img src="post-image.jpg" alt="Post Image" class="post-thumbnail">
+                        <div class="post-time">منذ يومان</div>
+                    </div>
+                </div>
+                <!-- end post -->
+                <!-- post -->
+                <div class="post">
+                    <div class="post-content">
+                        <h3 class="post-title">عنوان المقالة</h3>
+                        <div class="post-text">
+
+                            هذا مقال عن برمجة الويب وتطوير المواقع الإلكترونية. يتحدث المقال عن أحدث التقنيات
+                            والأدوات
+                            التي يمكن استخدامها في تطوير
+                            الواجهات وتحسين أداء المواقع.
+                        </div>
+                        <div class="post-footer">
+                            <div class="post-author">
+                                <img src="profile.jpg" alt="Author Avatar" class="author-avatar">
+                                <div class="author-details">
+                                    <span class="author-name">أنس بحيح</span>
+                                    <div class="author-handle">@anas</div>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <i class="far fa-bookmark"></i> <!-- Bookmark icon (outline style) -->
+                                <i class="far fa-heart"></i> <!-- Like icon (outline style) -->
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="post-image">
+                        <img src="post-image.jpg" alt="Post Image" class="post-thumbnail">
+                        <div class="post-time">منذ يومان</div>
+                    </div>
+                </div>
+                <!-- end post -->
+
+            </div>
+
+
+        </div>
+        <div class="right-menu">
+            <!-- Right Menu Content -->
+            <!-- Profile Picture -->
+            <div class="menu-container">
+                <div class="profile-picture">
+                    <img src="profile.jpg" alt="Profile Picture">
+                </div>
+                <ul class="menu-list" id="rightMenu">
+                    <li><a href="#"><i class="fas fa-home"></i> الصفحة الرئيسية</a></li>
+                    <li><a href="#"><i class="fas fa-bell"></i> الإشعارات</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> الرسائل</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> الملف الشخصي</a></li>
+                    <!-- JavaScript will dynamically add more menu items here -->
+                </ul>
+            </div>
+
+        </div>
     </div>
+
 </body>
 
 </html>

@@ -31,7 +31,11 @@ body {
 
 a {
     text-decoration: none;
-    color: #3066be;
+    color: #3c3744;
+}
+
+a:hover {
+    color: #E5E5E5;
 }
 
 /* Media queries for different screen resolutions */
@@ -107,10 +111,7 @@ a {
     direction: rtl;
     margin-right: 10px;
     margin-left: 10px;
-    background-color: #f5f8fa;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    padding-right: 10px;
     flex-direction: column;
     position: sticky;
     top: 20px;
@@ -128,10 +129,10 @@ a {
 
 .left-menu {
     direction: rtl;
-    border-radius: 15px;
     margin-right: 10px;
     margin-left: 10px;
     display: flex;
+    flex: 3;
     flex-direction: column;
     height: 100%;
 }
@@ -146,45 +147,67 @@ a {
 }
 
 .central-column {
-    flex: 3;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid #e1e8ed;
+    border-left: 1px solid #e1e8ed;
+    flex: 5;
     padding: 20px;
     direction: rtl;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .post {
     border-bottom: 1px solid #e1e8ed;
     padding: 15px 0;
+    display: flex;
+    width: 100%;
 }
 
-.post-header {
-    margin: 10px 0;
+.post-footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
 }
 
 .post-image img {
     border-radius: 10px;
+    margin-right: 10px;
+    /* Add margin to separate the post image from the content */
     /* Add rounded edges */
+}
+
+.post-thumbnail {
+    border-radius: 10px;
+    /* Add rounded edges */
+    max-width: 250px;
+    /* Adjust the max width as needed */
+    max-height: 200px;
+    /* Adjust the max height as needed */
 }
 
 .post:last-child {
     border-bottom: none;
 }
 
-.post-text {
+.post-title {
+    margin-top: 0;
     margin-bottom: 10px;
     color: #3c3744;
+    font-family: 'Cairo', sans-serif;
+}
+
+.post-text {
+    margin-bottom: 8px;
+    color: #3c3744;
+    font-family: 'Cairo', sans-serif;
 }
 
 .post-author {
+    flex: 2;
     font-weight: bold;
     font-size: 18px;
-    color: #3066be;
+    color: #000000;
     display: flex;
     align-items: center;
 }
@@ -196,31 +219,49 @@ a {
 
 .author-name {
     font-weight: bold;
-    font-size: 18px;
-    color: #3066be;
+    font-size: 12px;
+    color: #2D3033;
 }
 
-.post-handle {
-    font-size: 16px;
+.author-handle {
+    font-size: 12px;
     color: #657786;
 }
 
 .post-time {
     color: #657786;
     font-size: 14px;
+    margin-right: 10px;
+    text-align: left;
+    font-family: 'Cairo', sans-serif;
+    /* Add right margin for spacing */
 }
 
 .author-avatar {
     max-width: 40px;
     max-height: 40px;
     border-radius: 50%;
-    margin-right: 10px;
     margin-left: 10px;
 }
 
 .post-content {
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
+
+.post-actions {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    /* Add right margin for spacing */
+}
+
+.post-actions i {
+    margin: 10px;
+    /* Add right margin for spacing */
+}
+
 
 .profile-picture {
     max-width: 100px;
@@ -235,21 +276,18 @@ a {
 }
 
 .menu-container {
-    border: 1px solid #e1e8ed;
-    border-radius: 15px;
     padding: 20px;
     margin-bottom: 20px;
 }
 
 .tags-container {
-    border: 1px solid #e1e8ed;
-    border-radius: 15px;
+    border-bottom: 1px solid #e1e8ed;
     padding: 10px;
 }
 
 .tags-container h2 {
     margin-top: 0px;
-    color: #3066be;
+    color: #000000;
     font-size: 18px;
 }
 
@@ -263,21 +301,20 @@ a {
     margin-bottom: 5px;
     color: #657786;
     display: inline-block;
-    background-color: #b4c5e4;
-    padding: 2px 2px;
+    background-color: #E5E5E5;
+    padding: 2px 10px;
     border-radius: 20px;
 }
 
 .content-container {
-    border: 1px solid #e1e8ed;
-    border-radius: 15px;
+    border-bottom: 1px solid #e1e8ed;
     padding: 20px;
     margin-bottom: 20px;
 }
 
 .content-container h2 {
     margin-top: 0;
-    color: #3066be;
+    color: #000000;
     font-size: 18px;
 }
 
@@ -299,7 +336,7 @@ a {
 
 /* Navigation Bar Styles */
 nav {
-    background-color: #3066be;
+    background-color: #2D3033;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -448,7 +485,7 @@ nav {
 
 /* Styles for New Comment Button */
 .new-comment-button {
-    background-color: #3560EE;
+    background-color: #000000;
     /* Button background color */
     color: #fff;
     border: none;
@@ -514,15 +551,14 @@ nav {
 }
 
 .follow-container {
-    border: 1px solid #e1e8ed;
-    border-radius: 15px;
+    border-bottom: 1px solid #e1e8ed;
     padding: 20px;
     margin-bottom: 20px;
 }
 
 .follow-container h2 {
     margin-top: 0;
-    color: #3066be;
+    color: #000000;
     font-size: 16px;
     /* Smaller font size for the heading */
 }
@@ -548,7 +584,7 @@ nav {
 
 .follow-list a {
     font-weight: bold;
-    color: #3066be;
+    color: #000000;
     font-size: 14px;
     /* Smaller font size for the name */
     text-decoration: none;
@@ -561,7 +597,7 @@ nav {
 }
 
 .follow-button {
-    background-color: #3560EE;
+    background-color: #2D3033;
     color: #fff;
     border: none;
     padding: 8px 12px;
@@ -598,6 +634,6 @@ nav {
 }
 
 .article-list a:hover {
-    color: #3560EE;
+    color: #E5E5E5;
     /* Change color on hover */
 }
