@@ -104,6 +104,13 @@ a:hover {
 .menu-list {
     padding-right: 5px;
     list-style-type: none;
+    text-align: center;
+}
+
+.fas {
+    font-size: 36px;
+    color: black;
+    margin-bottom: 20px;
 }
 
 .left-menu,
