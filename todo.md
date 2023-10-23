@@ -1,4 +1,6 @@
-- [] change follwoing and featured to better design
+- [X] change follwoing and featured to better design
 - [] fix the scorlling issue
-- [] modify the right menu
+- [X] modify the right menu
+- [] aligh itemsin the right menu
 - [] modify the following container
+- [] add javascript feature to scroll all the way to the top
