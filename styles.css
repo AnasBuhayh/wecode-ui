@@ -160,7 +160,7 @@ a:hover {
     border-right: 1px solid #e1e8ed;
     border-left: 1px solid #e1e8ed;
     flex: 5;
-    padding: 20px;
+    padding: 0px 20px;
     direction: rtl;
 }
 
@@ -560,7 +560,8 @@ nav {
 
 .follow-list {
     list-style: none;
-    padding: 0;
+    padding-left: 50px;
+    padding-right: 0px;
 }
 
 .follow-list li {
@@ -575,6 +576,7 @@ nav {
     max-height: 40px;
     /* Reduce the size of the profile picture */
     border-radius: 50%;
+    margin-top: 6px;
 }
 
 .follow-list a {
@@ -584,6 +586,11 @@ nav {
     /* Smaller font size for the name */
     text-decoration: none;
     margin-right: 10px;
+}
+
+.follow-user {
+    flex: 2;
+    align-items: center;
 }
 
 .button-container {
