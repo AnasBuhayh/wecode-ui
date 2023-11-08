@@ -49,6 +49,8 @@ a:hover {
         align-items: center;
         text-align: center;
     }
+
+
 }
 
 /* For screens with a width of 768px (for tablets) */
@@ -57,6 +59,8 @@ a:hover {
         width: 95%;
         /* Adjust the width for tablets */
     }
+
+
 }
 
 /* For screens with a width of 1024px (for larger tablets and small desktops) */
@@ -65,6 +69,8 @@ a:hover {
         width: 95%;
         /* Adjust the width for larger tablets and small desktops */
     }
+
+
 }
 
 /* For screens with a width of 1280px (for most desktops) */
@@ -273,7 +279,7 @@ a:hover {
     /* Add right margin for spacing */
 }
 
-.post-tag  {
+.post-tag {
     font-size: 12px;
     margin-bottom: 5px;
     color: #657786;
@@ -323,6 +329,10 @@ a:hover {
     background-color: #E5E5E5;
     padding: 2px 10px;
     border-radius: 20px;
+}
+
+.arabic-tags li:hover {
+    cursor: pointer;
 }
 
 .content-container {
