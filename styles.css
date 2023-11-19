@@ -110,6 +110,7 @@ a:hover {
 .menu-list {
     padding-right: 5px;
     list-style-type: none;
+    text-align: center;
 }
 
 .fas {
@@ -127,7 +128,6 @@ a:hover {
     flex-direction: column;
     position: sticky;
     top: 20px;
-    /* Adjust this value as needed */
 }
 
 .right-menu {
@@ -159,7 +159,6 @@ a:hover {
     /* Calculate max height to fit the viewport minus top margin */
     padding: 5px;
     margin-bottom: 20px;
-    text-align: center;
 
 }
 
@@ -368,7 +367,7 @@ nav {
     background-color: #2D3033;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 1px 0;
     /* Reduced padding for a slimmer bar */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     /* Add a subtle shadow */
@@ -589,7 +588,6 @@ nav {
 
 .follow-list li {
     display: flex;
-    align-items: center;
     margin-bottom: 10px;
 }
 
@@ -613,7 +611,14 @@ nav {
 
 .follow-user {
     flex: 2;
-    align-items: center;
+}
+
+.follow-user img {
+    max-width: 30px;
+}
+
+.user-follow-name {
+    display: inline-block;
 }
 
 .button-container {
